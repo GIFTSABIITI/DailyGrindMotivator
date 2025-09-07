@@ -1,0 +1,46 @@
+{
+  "name": "daily-grind-motivator",
+  "version": "1.0.0",
+  "description": "Daily motivation app created by Gift",
+  "author": "Gift",
+  "main": "main.js",
+  "homepage": "./",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "electron": "electron .",
+    "dist": "electron-builder --linux AppImage"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "electron": "^38.0.0",
+    "electron-builder": "^26.0.12",
+    "react-scripts": "5.0.1"
+  },
+  "build": {
+    "appId": "com.gift.dailygrind",
+    "productName": "Daily Grind Motivation",
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Utility",
+      "icon": "public/icon.png"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
